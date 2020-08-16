@@ -1,0 +1,368 @@
+Friends:
+  Prefix: '&bFriends &7|'
+  CheckForUpdates: true
+  CommandAliases:
+  - f
+  - friend
+  - freund
+  - freunde
+  FriendLimit: 20
+  FriendLimitExtended: 50
+  DateFormat: dd/MM/yyyy
+  BungeeMode: false
+  JoinQuitMessages: true
+  Status:
+    EnableFilter: false
+    MaxLenght: 30
+    ChangeDuration: 600
+    AllowFarbcodes: false
+  FriendChat:
+    Enable: true
+    Format: '@friends'
+    CheckForAbusiveWords: false
+  FriendMSG:
+    Enable: true
+    CheckForAbusiveWords: false
+    UseMSGCommand: true
+  Commands:
+    EnableClickableMessages: true
+    AddMessage:
+      Enable: true
+      CharacterLimit: 200
+    BlockNote:
+      Enable: true
+      CharacterLimit: 200
+  FriendItem:
+    Enable: false
+    Name: '&aFriends &7(Rightclick)'
+    Material: player_head
+    Lore: //&7Rightclick this item to open the//&7friend-inventory!
+    InventorySlot: 9
+    DelayedInventorySet: false
+  OpenGUIWithCommand: true
+  FriendInventory:
+    InventoryTitle: '&aYour friends: (Page %PAGE%)'
+    InventorySize: 54
+    HidePageItemsWhenNotNeeded: false
+    FriendsItem:
+      OnlineStatus: '&a(Online)'
+      OfflineStatus: '&7(Offline)'
+      Name: '&a%NAME% %ONLINE_STATUS%'
+      LoreOnline: '&7Status: //&r&o%STATUS%// //&7Friends since: %DATE%'
+      LoreOffline: '&7Status: //&r&o%STATUS%// //&7Last online: %LAST_ONLINE% o''clock//&7Friends
+        since: %DATE%'
+      ChangeSkullWhenOffline: true
+      NoStatusReplacement: '-'
+      LastOnlineFormat: MM/dd/yyyy - HH:mm
+      UseDisplaynames: false
+    RequestsItem:
+      Name: '&aRequests'
+      Material: emerald
+      Lore: '&7Currently: (%REQUESTS_COUNT%)'
+      InventorySlot: 46
+    BlockedItem:
+      Name: '&cBlocked Players'
+      Material: tnt
+      Lore: '&7Currently: (%BLOCKED_COUNT%)'
+      InventorySlot: 47
+    OptionsItem:
+      Name: '&3Options'
+      Material: comparator
+      Lore: ''
+      InventorySlot: 49
+    SortItem:
+      ShowItem: true
+      Name: '&3Sorting:'
+      Material: nether_star
+      Lore: '&r%SORTING%'
+      InventorySlot: 51
+      OnOffSorting: '&rOnline/Offline'
+      FavoriteSorting: '&rFavorites first'
+      LongFriendSorting: '&rLongest friends first'
+      Alphabetic: '&rAlphabetic'
+    NextPageItem:
+      ShowItem: true
+      Name: '&bNext Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 54
+    PreviousPageItem:
+      ShowItem: true
+      Name: '&bPrevious Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 53
+    Placeholders:
+      Material: gray_stained_glass_pane
+      InventorySlots:
+      - 48
+      - 50
+      - 52
+    CustomItems:
+      CUSTOM_ITEM_1:
+        Name: '&aCustomItem'
+        Material: oak_sign
+        Lore: '&7This is a custom item, which can be//&7created and edited in the
+          config.yml// //&7If you do not want to use this item//&7just remove it.'
+        InventorySlot: '1'
+        PerformCommand: say HyChrod is the best!
+  FriendEditInventory:
+    InventoryTitle: '&3%NAME%'
+    InventorySize: 9
+    FavoriteItem:
+      ShowItem: true
+      Name: '&6Favorite'
+      Material: golden_apple
+      Lore: '&7Currently: %FAVORITE_STATUS%'
+      InventorySlot: 6
+      FavoriteStatusOn: '&aOn'
+      FavoriteStatusOff: '&cOff'
+    CanSendMessagesItem:
+      ShowItem: true
+      Name: '&6%NAME% can send you messages'
+      Material: paper
+      Lore: '&7Currently: %SENDMESSAGES_STATUS%// //&7This includes the friendchat,
+        private//&7messages and join/quit notifications!'
+      InventorySlot: 5
+      SendMessagesStatusOn: '&aOn'
+      SendMessagesStatusOff: '&cOff'
+    NicknameItem:
+      ShowItem: true
+      Name: '&6Give your friend a nickname!'
+      Material: name_tag
+      Lore: '&7Currently: %NICKNAME%'
+      InventorySlot: 3
+      NoNicknameReplacement: '-'
+    RemoveItem:
+      Name: '&cRemove %NAME% from your friends'
+      Material: red_wool
+      Lore: ''
+      InventorySlot: 9
+    BackItem:
+      Name: '&7Back to your friends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+    JumpItem:
+      ShowItem: true
+      Name: '&9Jump to %NAME%'
+      Material: firework_rocket
+      Lore: ''
+      InventorySlot: 4
+    Placeholders:
+      Material: gray_stained_glass_pane
+      InventorySlots:
+      - 2
+      - 4
+      - 7
+      - 8
+    CustomItems:
+      NO_ITEMS: []
+  RequestsInventory:
+    InventoryTitle: '&aYour requests: (Page %PAGE%)'
+    InventorySize: 54
+    HidePageItemsWhenNotNeeded: false
+    RequestItem:
+      Name: '&a%NAME%'
+      Lore: '&7Requested: %DATE%//&7Message: //&r&o%MESSAGE%'
+      NoMessageReplacement: '-'
+    AcceptAllItem:
+      ShowItem: true
+      Name: '&aAccept all'
+      Material: lime_wool
+      Lore: '&7Currently: %REQUESTS_COUNT%'
+      InventorySlot: 49
+    DenyAllItem:
+      ShowItem: true
+      Name: '&cDeny all'
+      Material: red_wool
+      Lore: '&7Currently: %REQUESTS_COUNT%'
+      InventorySlot: 51
+    BackItem:
+      Name: '&7Back to friends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 46
+    PreviousPageItem:
+      ShowItem: true
+      Name: '&bPrevious Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 53
+    NextPageItem:
+      ShowItem: true
+      Name: '&bNext Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 54
+    Placeholders:
+      Material: gray_stained_glass_pane
+      InventorySlots:
+      - 47
+      - 48
+      - 50
+      - 52
+    CustomItems:
+      NO_ITEMS: []
+  RequestEditInventory:
+    InventoryTitle: '&a%NAME% request:'
+    InventorySize: 9
+    MessageItem:
+      ShowItem: true
+      Name: '&7%NAME%''s message:'
+      Material: paper
+      Lore: '&r&o%MESSAGE%'
+      InventorySlot: 5
+      NoMessageReplacement: '-'
+    AcceptItem:
+      Name: '&aAccept %NAME%''s request'
+      Material: lime_wool
+      Lore: ''
+      InventorySlot: 4
+    DenyItem:
+      Name: '&cDeny %NAME%''s request'
+      Material: red_wool
+      Lore: ''
+      InventorySlot: 6
+    BackItem:
+      Name: '&7Back to your requests'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+    Placeholders:
+      Material: gray_stained_glass_pane
+      InventorySlots:
+      - 2
+      - 3
+      - 7
+      - 8
+      - 9
+    CustomItems:
+      NO_ITEMS: []
+  BlockedInventory:
+    InventoryTitle: '&cBlocked players: (Page %PAGE%)'
+    InventorySize: 54
+    HidePageItemsWhenNotNeeded: false
+    BlockedItem:
+      Name: '&c%NAME%'
+      Lore: '&7Blocked: %DATE%//&7Note: //&r&o%NOTE%'
+      NoNoteReplacement: '-'
+    UnblockAllItem:
+      ShowItem: true
+      Name: '&aUnblock All'
+      Material: lime_wool
+      Lore: '&7Currently: %BLOCKED_COUNT%'
+      InventorySlot: 50
+    NextPageItem:
+      ShowItem: true
+      Name: '&bNext Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 54
+    PreviousPageItem:
+      ShowItem: true
+      Name: '&bPrevious Page'
+      Material: arrow
+      Lore: ''
+      InventorySlot: 53
+    BackItem:
+      Name: '&7Back to friends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 46
+    Placeholders:
+      Material: gray_stained_glass_pane
+      InventorySlots:
+      - 47
+      - 48
+      - 49
+      - 51
+      - 52
+    CustomItems:
+      NO_ITEMS: []
+  BlockedEditInventory:
+    InventoryTitle: '&c%NAME%'
+    InventorySize: 9
+    BackItem:
+      Name: '&7Back to your blocked players'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+    UnblockItem:
+      Name: '&aUnblock %NAME%'
+      Material: lime_wool
+      Lore: ''
+      InventorySlot: 5
+    NoteItem:
+      ShowItem: true
+      Name: '&7Note:'
+      Material: paper
+      Lore: '&r&o%NOTE%'
+      InventorySlot: 6
+      NoNoteReplacement: '-'
+    Placeholders:
+      Material: gray_stained_glass_pane
+      InventorySlots:
+      - 2
+      - 3
+      - 4
+      - 7
+      - 8
+      - 9
+    CustomItems:
+      NO_ITEMS: []
+  OptionsInventory:
+    InventoryTitle: '&3Options:'
+    InventorySize: 9
+    OptionStatusOn: '&aOn'
+    OptionStatusOff: '&cOff'
+    BackItem:
+      Name: '&7Back to your friends'
+      Material: iron_door
+      Lore: ''
+      InventorySlot: 1
+    ReceiveMessagesItem:
+      ShowItem: true
+      Name: '&6Receive Messages'
+      Material: paper
+      Lore: '&7Currently: %OPTION_MESSAGES_STATUS%// //&7Toggle receiving messages
+        of all kind//&7Includes private messages aswell as//&7the friendchat and join/quit
+        notifications'
+      InventorySlot: 3
+      OnlyFavoritesStatus: '&eOnly Favorites'
+    ReceiveRequestsItem:
+      ShowItem: true
+      Name: '&6Receive Requests'
+      Material: player_head
+      Lore: '&7Currently: %OPTION_REQUESTS_STATUS%// //&7Toggle wether you want to
+        receive//&7friendrequests from other players'
+      InventorySlot: 5
+    OfflinemodeItem:
+      ShowItem: true
+      Name: '&6Offlinemode'
+      Material: red_bed
+      Lore: '&7Currently: %OPTION_OFFLINEMODE_STATUS%// //&7If enabled, you will be
+        shown//&7as offline to all your friends'
+      InventorySlot: 7
+    StatusItem:
+      ShowItem: true
+      Name: '&6Change your status'
+      Material: name_tag
+      Lore: '&7Your current status://&r&o%STATUS%'
+      InventorySlot: 9
+    JumpItem:
+      ShowItem: true
+      Name: '&9Jumping'
+      Material: firework_rocket
+      Lore: '&7Currently: %OPTION_JUMPING_STATUS%// //&7If enabled, friends can jump
+        to//&7your current location!'
+      InventorySlot: 4
+    Placeholders:
+      Material: gray_stained_glass_pane
+      InventorySlots:
+      - 2
+      - 4
+      - 6
+      - 8
+    CustomItems:
+      NO_ITEMS: []

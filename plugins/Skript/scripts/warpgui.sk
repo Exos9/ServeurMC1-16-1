@@ -1,0 +1,14 @@
+command /warpgui:
+    trigger:
+        open virtual chest inventory with size 3 with name "&6Menu" to player
+        create a gui slot 10 of player with diamond ore named "&6Resources" to do nothing
+        create a gui slot 13 of player with bedrock named "&6Creative" to close then run player command "/mv tp world_plots"
+        create a gui slot 16 of player with iron sword named "&6Survival" to close then run player command "/mv tp world_survival"
+        create a gui slot 22 of player with oak leaves named "&6Lobby" to close then run player command "/mv tp world_lobby"
+        if player is a op:
+            create a gui slot 4 of player with command block named "&6OP House" to close then run player command "/ophouse"
+
+command /ophouse:
+    trigger:
+        execute player command "/mv tp lobby"
+        execute player command "/tp 63 85 109"

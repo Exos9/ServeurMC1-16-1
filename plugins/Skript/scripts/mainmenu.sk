@@ -1,0 +1,6 @@
+command /gui:
+    trigger:
+        open virtual chest inventory with size 3 with name "&6Menu" to player
+        create a gui slot 10 of player with player head named "&6Friends" to close then execute player command "/friends"
+        create a gui slot 13 of player with ender pearl named "&6Warp" to close then execute player command "/warpgui"
+        create a gui slot 16 of player with redstone torch named "&6Report a player" to close then execute player command "/report"

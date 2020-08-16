@@ -1,0 +1,35 @@
+on player join:
+    execute player command "/mv tp lobby"
+    remove all items from player's inventory
+    wait 5 ticks
+    if player is op:
+        set slot 7 of player to end crystal named "&6Admin Panel"
+		
+on player teleport:
+    wait 5 ticks
+    set slot 8 of player to nether star named "&6Main Menu"
+    if player is op:
+        set slot 7 of player to end crystal named "&6Admin Panel"
+	
+on right click holding nether star:
+    if tool's name is "&6Main Menu":
+        execute player command "/gui"
+		
+on right click holding end crystal:
+    if tool's name is "&6Admin Panel":
+        execute player command "/adminpanel"
+		
+on drop:
+   if name of tool of player is "&Admin Panel":
+      cancel event
+   else:
+      stop
+
+on inventory click:
+   if name of tool of player is "&6Admin Panel":
+      cancel event
+   else:
+      stop
+
+	
+

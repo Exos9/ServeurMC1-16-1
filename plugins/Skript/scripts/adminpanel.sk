@@ -1,0 +1,6 @@
+command /adminpanel:
+    trigger:
+        open virtual chest inventory with size 3 with name "&6Menu" to player
+        create a gui slot 13 of player with player head named "&6Permissions" to close then run player command "/uperms"
+        create a gui slot 10 of player with emerald named "&6Admin Stuff" to do nothing
+        create a gui slot 16 of player with redstone torch named "&6TBD" to do nothing

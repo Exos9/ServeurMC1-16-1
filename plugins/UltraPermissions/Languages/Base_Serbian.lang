@@ -1,0 +1,47 @@
+ENABLE: aktivirajte
+ENABLED: aktiviran(o)
+DISABLE: deaktivirajte
+DISABLED: deaktivirano
+SETTINGS: Podešavanja
+#DAY: Day
+#DAYS: Days
+#HOUR: Hour
+#HOURS: Hours
+#MINUTE: Minute
+#MINUTES: Minutes
+#SECOND: Second
+#SECONDS: Seconds
+NONE: Ništa
+COMMAND_NOPERMISSION: Nedovoljno **dozvola**.
+COMMAND_NOCONSOLE: Komanda se može koristiti samo iz konzole.
+GUI_SETTINGS_SELECTPAGE: Kliknite za prikaz Podešavanja
+GUI_SETTINGS_PAGESELECTED: Ova strana je trenutno **odabrana**
+GUI_SETTINGS_LANGUAGE_NAME: Jezik
+GUI_SETTINGS_MYSQL_NAME: MySQL Databaza
+GUI_SETTINGS_MYSQL_EDITVALUE_ACTION: Kliknite za promenu unosa
+GUI_SETTINGS_MYSQL_CURRENTVALUE: Trenutni Unos:
+GUI_SETTINGS_MYSQL_SETUP_TITLE_FIELDNAME: MySQL - %1
+GUI_SETTINGS_MYSQL_SETUP_TITLE_TYPEINVALUE: Unesite novi unos
+GUI_SETTINGS_MYSQL_SETUP_TITLE: Podesite MySQL
+GUI_SETTINGS_MYSQL_SETUP_ACTION: Kliknite za aktivaciju MySQL
+GUI_SETTINGS_MYSQL_SETUP_INFO: Ovo zahteva eksternu MySQL Databazu za povezivanje
+GUI_SETTINGS_MYSQL_DISABLE_TITLE: Deaktivirajte MySQL
+GUI_SETTINGS_MYSQL_DISABLE_ACTION: Kliknite za deaktivaciju MySQL
+GUI_SETTINGS_MYSQL_RESTARTREQUIRED: Bićete upitani da restartujete da biste primenili promene
+GUI_SETTINGS_MYSQL_CANTCONNECT: Neuspelo povezivanje sa Vašim MySQL
+GUI_SETTINGS_MYSQL_SAVE_TITLE: Test & Čuvanje
+GUI_SETTINGS_MYSQL_SAVE_ACTION: Kliknite za **test** i **čuvanje**
+GUI_SETTINGS_LANG_ACTION: Kliknite da **izaberete** ovaj jezik
+GUI_SETTINGS_LANG_SELECTED: Ovaj jezik je **trenutno** izabran
+GUI_SETTINGS_LANG_PHRASES: Fraze
+GUI_SETTINGS_LANG_COVERAGE: Pokrivanje
+GUI_PAGEABLE_SEARCH_TITLE: Pretraživanje
+GUI_PAGEABLE_SEARCH_ACTION: Kliknite za pretraživanje
+GUI_PAGEABLE_NEXT_TITLE: Sledeća strana
+GUI_PAGEABLE_NEXT_ACTION: Kliknite za odlazak na sledeću stranu
+GUI_PAGEABLE_PREVIOUS_TITLE: Prethodna strana
+GUI_PAGEABLE_PREVIOUS_ACTION: Kliknite za povratak na prethodnu stranu
+GUI_PAGEABLE_SEARCH_CLOSE_ACTION: Kliknite za **zatvaranje** pretraživanja
+GUI_PAGEABLE_SEARCH_TYPEIN: Unesite tekst za pretragu
+GUI_BACK_NAME: Nazad
+GUI_BACK_ACTION: Kliknite da se vratite nazad

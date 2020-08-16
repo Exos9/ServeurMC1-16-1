@@ -1,0 +1,14 @@
+Prefix: §9Ultra Permissions>
+Language: English
+bungeeCord: false
+defaultperms: false
+serverIdentifier: 2355d249-09c8-4f23-b010-cec4c6a019f1
+Styling:
+  CHAT:
+    '*': '{Prefixes} §7{Player}§b: §f{Message}'
+  TABLIST:
+    '*': '{Prefix} §f{Player}'
+  DISPLAY_NAME:
+    '*': none
+disable_lookup_cache: false
+guiCompatClicking: false
